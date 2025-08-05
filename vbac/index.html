@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โรงเรียนตัวอย่าง - VBAC School</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="school-info">
+                    <img src="assets/images/logo.png" alt="โรงเรียนตัวอย่าง" class="logo">
+                    <div class="school-name">
+                        <h1>โรงเรียนตัวอย่าง</h1>
+                        <p>Example School</p>
+                    </div>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">หน้าแรก</a></li>
+                        <li><a href="about.html">เกี่ยวกับโรงเรียน</a></li>
+                        <li><a href="academic.html">วิชาการ</a></li>
+                        <li><a href="news.html">ข่าวสาร</a></li>
+                        <li><a href="contact.html">ติดต่อเรา</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><button id="darkModeToggle"><i class="fas fa-moon"></i></button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>ยินดีต้อนรับสู่โรงเรียนตัวอย่าง</h2>
+                <p>สถาบันการศึกษาคุณภาพ เพื่ออนาคตที่สดใส</p>
+                <a href="#about" class="btn btn-primary">เรียนรู้เพิ่มเติม</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/hero-image.jpg" alt="นักเรียนโรงเรียนตัวอย่าง">
+            </div>
+        </section>
+
+        <section class="news-section">
+            <h2 class="section-title">ข่าวสารล่าสุด</h2>
+            <div class="news-container" id="newsContainer">
+                <!-- ข้อมูลข่าวจะถูกโหลดจาก JSON โดย JavaScript -->
+            </div>
+        </section>
+
+        <section class="quick-links">
+            <div class="quick-link">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>ปฏิทินการศึกษา</h3>
+                <a href="#">ดูปฏิทิน</a>
+            </div>
+            <div class="quick-link">
+                <i class="fas fa-book"></i>
+                <h3>หลักสูตรการศึกษา</h3>
+                <a href="#">ดูหลักสูตร</a>
+            </div>
+            <div class="quick-link">
+                <i class="fas fa-chart-bar"></i>
+                <h3>แบบสำรวจ</h3>
+                <a href="#" id="surveyLink">ร่วมตอบแบบสำรวจ</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>เกี่ยวกับเรา</h3>
+                    <p>โรงเรียนตัวอย่าง มุ่งมั่นในการพัฒนาการศึกษาอย่างต่อเนื่อง</p>
+                </div>
+                <div class="footer-section">
+                    <h3>ติดต่อเรา</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 ถนนตัวอย่าง แขวงทดลอง เขตทดสอบ กรุงเทพฯ 10100</p>
+                    <p><i class="fas fa-phone"></i> 02-123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@example.ac.th</p>
+                </div>
+                <div class="footer-section">
+                    <h3>ลิงก์ด่วน</h3>
+                    <ul>
+                        <li><a href="#">ระบบสารสนเทศ</a></li>
+                        <li><a href="#">ระบบลงทะเบียน</a></li>
+                        <li><a href="#">ห้องสมุดออนไลน์</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 โรงเรียนตัวอย่าง. สงวนลิขสิทธิ์.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+</html>

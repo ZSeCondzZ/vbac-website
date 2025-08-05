@@ -1,0 +1,49 @@
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .hero-content h2,
+.dark-mode .section-title,
+.dark-mode .news-title,
+.dark-mode .quick-link h3 {
+    color: #bb86fc;
+}
+
+.dark-mode .quick-link {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.dark-mode .quick-link:hover {
+    background-color: #3700b3;
+}
+
+.dark-mode .news-card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.dark-mode .news-title {
+    color: #bb86fc;
+}
+
+.dark-mode .read-more {
+    color: #03dac6;
+}
+
+.dark-mode .btn-primary {
+    background-color: #3700b3;
+}
+
+.dark-mode .btn-primary:hover {
+    background-color: #6200ee;
+}
+
+.dark-mode footer {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .footer-section a:hover {
+    color: #03dac6;
+}
