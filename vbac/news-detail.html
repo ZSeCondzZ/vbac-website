@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="th" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายละเอียดข่าว | วิทยาลัยเทคโนโลยีวิบูลย์บริหารธุรกิจ รามอินทรา</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header class="main-header">
+        <!-- Include the same header as index.html -->
+    </header>
+
+    <!-- News Detail Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1 id="news-title">รายละเอียดข่าว</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html" data-i18n="home">หน้าหลัก</a></li>
+                    <li class="breadcrumb-item"><a href="../news.html" data-i18n="news">ข่าวสาร</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">รายละเอียดข่าว</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- News Detail Section -->
+    <section class="news-detail-section">
+        <div class="container">
+            <article class="news-article">
+                <div class="news-meta">
+                    <span id="news-date" class="news-date"></span>
+                    <span id="news-category" class="news-category"></span>
+                </div>
+                
+                <div id="news-content" class="news-content">
+                    <!-- News content will be loaded here -->
+                    <div class="loading-spinner">
+                        <div class="spinner"></div>
+                        <p data-i18n="loading">กำลังโหลดข้อมูล...</p>
+                    </div>
+                </div>
+                
+                <div class="news-image">
+                    <img id="news-image" src="" alt="">
+                </div>
+                
+                <div class="news-footer">
+                    <div class="news-tags">
+                        <i class="fas fa-tags"></i>
+                        <span id="news-tags"></span>
+                    </div>
+                    
+                    <div class="news-share">
+                        <span data-i18n="share">แชร์:</span>
+                        <a href="#" class="social-share facebook" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-share twitter" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-share line" aria-label="Share on Line"><i class="fab fa-line"></i></a>
+                    </div>
+                </div>
+            </article>
+            
+            <div class="news-navigation">
+                <a href="#" id="prev-news" class="news-nav-btn">
+                    <i class="fas fa-chevron-left"></i>
+                    <span data-i18n="previous_news">ข่าวก่อนหน้า</span>
+                </a>
+                <a href="../news.html" class="news-back-btn" data-i18n="back_to_news">กลับสู่หน้าข่าวสาร</a>
+                <a href="#" id="next-news" class="news-nav-btn">
+                    <span data-i18n="next_news">ข่าวถัดไป</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+            
+            <div class="related-news">
+                <h2 data-i18n="related_news">ข่าวสารที่เกี่ยวข้อง</h2>
+                <div class="related-news-grid" id="related-news">
+                    <!-- Related news will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="main-footer">
+        <!-- Include the same footer as index.html -->
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/dark-mode.js"></script>
+    <script src="../js/language-switcher.js"></script>
+    <script src="../js/news-detail.js"></script>
+</body>
+</html>

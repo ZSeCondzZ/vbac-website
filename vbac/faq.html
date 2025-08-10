@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="th" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คำถามที่พบบ่อย | วิทยาลัยเทคโนโลยีวิบูลย์บริหารธุรกิจ รามอินทรา</title>
+    <meta name="description" content="คำถามที่พบบ่อยเกี่ยวกับวิทยาลัยเทคโนโลยีวิบูลย์บริหารธุรกิจ รามอินทรา">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header class="main-header">
+        <!-- Include the same header as index.html -->
+    </header>
+
+    <!-- FAQ Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1 data-i18n="faq">คำถามที่พบบ่อย</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" data-i18n="home">หน้าหลัก</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" data-i18n="faq">คำถามที่พบบ่อย</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-search">
+                <input type="text" id="faq-search" placeholder="ค้นหาคำถาม..." data-i18n="faq_search_placeholder">
+                <button type="button"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="faq-categories">
+                <button class="faq-category-btn active" data-category="all" data-i18n="all_categories">ทั้งหมด</button>
+                <button class="faq-category-btn" data-category="admission" data-i18n="admission">การรับสมัคร</button>
+                <button class="faq-category-btn" data-category="academics" data-i18n="academics">วิชาการ</button>
+                <button class="faq-category-btn" data-category="tuition" data-i18n="tuition">ค่าเล่าเรียน</button>
+                <button class="faq-category-btn" data-category="facilities" data-i18n="facilities">สิ่งอำนวยความสะดวก</button>
+                <button class="faq-category-btn" data-category="other" data-i18n="other">อื่นๆ</button>
+            </div>
+            
+            <div class="faq-accordion" id="faq-accordion">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item" data-categories="admission">
+                    <button class="faq-question">
+                        <span data-i18n="faq1_question">วิทยาลัยเปิดรับสมัครเมื่อไร?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq1_answer">วิทยาลัยเปิดรับสมัครนักศึกษาใหม่ปีละ 2 ครั้ง ในเดือนเมษายนและเดือนตุลาคม ผู้สนใจสามารถตรวจสอบวันที่แน่นอนได้จากเว็บไซต์หรือติดต่อฝ่ายรับสมัคร</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item" data-categories="admission">
+                    <button class="faq-question">
+                        <span data-i18n="faq2_question">ต้องใช้เอกสารอะไรบ้างในการสมัคร?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq2_answer">เอกสารที่ต้องใช้ในการสมัครประกอบด้วย:</p>
+                        <ul>
+                            <li data-i18n="faq2_answer1">รูปถ่ายขนาด 1 นิ้ว จำนวน 2 รูป</li>
+                            <li data-i18n="faq2_answer2">สำเนาทะเบียนบ้าน</li>
+                            <li data-i18n="faq2_answer3">สำเนาบัตรประชาชน</li>
+                            <li data-i18n="faq2_answer4">เอกสารการศึกษา (ปพ.1 หรือ ปพ.7)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item" data-categories="tuition">
+                    <button class="faq-question">
+                        <span data-i18n="faq3_question">ค่าเล่าเรียนเท่าไร?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq3_answer">ค่าเล่าเรียนแตกต่างกันตามสาขาวิชา โดยเฉลี่ยอยู่ที่ประมาณ 25,000 - 30,000 บาทต่อภาคการศึกษา สามารถตรวจสอบรายละเอียดค่าใช้จ่ายแต่ละสาขาได้ที่หน้าสาขาวิชา</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item" data-categories="tuition">
+                    <button class="faq-question">
+                        <span data-i18n="faq4_question">มีระบบผ่อนชำระหรือไม่?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq4_answer">วิทยาลัยมีระบบผ่อนชำระค่าเล่าเรียน โดยสามารถแบ่งชำระได้ 3 งวดต่อภาคการศึกษา โดยไม่มีดอกเบี้ย</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item" data-categories="academics">
+                    <button class="faq-question">
+                        <span data-i18n="faq5_question">แต่ละสาขามีการฝึกงานหรือไม่?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq5_answer">ทุกสาขาวิชามีการฝึกงานในองค์กรภายนอกเป็นเวลา 1 ภาคการศึกษาในช่วงปีสุดท้ายของการศึกษา เพื่อให้นักศึกษาได้ประสบการณ์การทำงานจริง</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 6 -->
+                <div class="faq-item" data-categories="academics">
+                    <button class="faq-question">
+                        <span data-i18n="faq6_question">มีกิจกรรมเสริมหลักสูตรอะไรบ้าง?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq6_answer">วิทยาลัยจัดกิจกรรมเสริมหลักสูตรหลากหลาย เช่น</p>
+                        <ul>
+                            <li data-i18n="faq6_answer1">กิจกรรมพัฒนาทักษะวิชาชีพ</li>
+                            <li data-i18n="faq6_answer2">กิจกรรมส่งเสริมคุณธรรมจริยธรรม</li>
+                            <li data-i18n="faq6_answer3">กิจกรรมกีฬาและนันทนาการ</li>
+                            <li data-i18n="faq6_answer4">กิจกรรมบำเพ็ญประโยชน์</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 7 -->
+                <div class="faq-item" data-categories="facilities">
+                    <button class="faq-question">
+                        <span data-i18n="faq7_question">วิทยาลัยมีสิ่งอำนวยความสะดวกอะไรบ้าง?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq7_answer">วิทยาลัยมีสิ่งอำนวยความสะดวกครบครัน ได้แก่ ห้องเรียนมาตรฐาน ห้องปฏิบัติการคอมพิวเตอร์ ห้องสมุด หอประชุม โรงอาหาร สนามกีฬา และพื้นที่นั่งเล่น</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 8 -->
+                <div class="faq-item" data-categories="other">
+                    <button class="faq-question">
+                        <span data-i18n="faq8_question">มีหอพักหรือไม่?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq8_answer">วิทยาลัยไม่มีหอพักในบริเวณ แต่มีหอพักเอกชนใกล้เคียงหลายแห่งที่นักศึกษาสามารถเช่าได้ ฝ่ายกิจการนักศึกษาสามารถให้คำแนะนำเกี่ยวกับหอพักได้</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-contact">
+                <h3 data-i18n="faq_contact_title">ไม่พบคำตอบที่คุณต้องการ?</h3>
+                <p data-i18n="faq_contact_desc">ติดต่อเราได้ที่ฝ่ายประชาสัมพันธ์ เรายินดีให้ความช่วยเหลือ</p>
+                <a href="contact.html" class="btn" data-i18n="contact_us">ติดต่อเรา</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="main-footer">
+        <!-- Include the same footer as index.html -->
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/dark-mode.js"></script>
+    <script src="js/language-switcher.js"></script>
+    <script src="js/faq.js"></script>
+</body>
+</html>
