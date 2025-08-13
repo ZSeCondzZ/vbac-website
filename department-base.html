@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="th" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{DEPARTMENT_NAME}} | วิทยาลัยเทคโนโลยีวิบูลย์บริหารธุรกิจ รามอินทรา</title>
+    <meta name="description" content="{{DEPARTMENT_DESCRIPTION}}">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/department.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header class="main-header">
+        <!-- Include the same header as index.html -->
+    </header>
+
+    <!-- Department Banner -->
+    <section class="department-banner" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/{{DEPARTMENT_IMAGE}}');">
+        <div class="container">
+            <h1>{{DEPARTMENT_NAME}}</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html" data-i18n="home">หน้าหลัก</a></li>
+                    <li class="breadcrumb-item"><a href="#" data-i18n="departments">สาขาวิชา</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{DEPARTMENT_NAME}}</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Department Content -->
+    <section class="department-content">
+        <div class="container">
+            <div class="department-overview">
+                <div class="overview-text">
+                    <h2 data-i18n="overview">ภาพรวม</h2>
+                    <p>{{DEPARTMENT_OVERVIEW}}</p>
+                    
+                    <div class="quick-facts">
+                        <h3 data-i18n="quick_facts">ข้อมูลโดยสังเขป</h3>
+                        <ul>
+                            <li><strong data-i18n="degree">วุฒิการศึกษา:</strong> {{DEGREE}}</li>
+                            <li><strong data-i18n="duration">ระยะเวลาเรียน:</strong> {{DURATION}}</li>
+                            <li><strong data-i18n="tuition_fee">ค่าเล่าเรียน:</strong> {{TUITION_FEE}}</li>
+                            <li><strong data-i18n="contact_person">ผู้ประสานงาน:</strong> {{CONTACT_PERSON}}</li>
+                            <li><strong data-i18n="contact_email">อีเมล:</strong> {{CONTACT_EMAIL}}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overview-image">
+                    <img src="../images/{{DEPARTMENT_IMAGE2}}" alt="{{DEPARTMENT_NAME}}">
+                </div>
+            </div>
+            
+            <div class="department-curriculum">
+                <h2 data-i18n="curriculum">หลักสูตร</h2>
+                <p>{{CURRICULUM_DESCRIPTION}}</p>
+                
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="year1" data-i18n="year1">ปีที่ 1</button>
+                    <button class="tab-btn" data-tab="year2" data-i18n="year2">ปีที่ 2</button>
+                    <button class="tab-btn" data-tab="year3" data-i18n="year3">ปีที่ 3</button>
+                </div>
+                
+                <div class="tab-content active" id="year1">
+                    <h3 data-i18n="first_year">ชั้นปีที่ 1</h3>
+                    <div class="courses-grid">
+                        {{YEAR1_COURSES}}
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="year2">
+                    <h3 data-i18n="second_year">ชั้นปีที่ 2</h3>
+                    <div class="courses-grid">
+                        {{YEAR2_COURSES}}
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="year3">
+                    <h3 data-i18n="third_year">ชั้นปีที่ 3</h3>
+                    <div class="courses-grid">
+                        {{YEAR3_COURSES}}
+                    </div>
+                </div>
+            </div>
+            
+            <div class="department-career">
+                <h2 data-i18n="career_opportunities">โอกาสทางอาชีพ</h2>
+                <p>{{CAREER_DESCRIPTION}}</p>
+                
+                <div class="career-grid">
+                    {{CAREER_OPPORTUNITIES}}
+                </div>
+            </div>
+            
+            <div class="department-gallery">
+                <h2 data-i18n="department_gallery">ภาพกิจกรรมสาขา</h2>
+                <div class="gallery-grid">
+                    {{DEPARTMENT_GALLERY}}
+                </div>
+            </div>
+            
+            <div class="department-contact">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3 data-i18n="more_information">ต้องการข้อมูลเพิ่มเติม?</h3>
+                        <p data-i18n="contact_department">ติดต่อสาขาวิชา {{DEPARTMENT_NAME}}</p>
+                        <a href="../contact.html" class="btn" data-i18n="contact_us">ติดต่อเรา</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="main-footer">
+        <!-- Include the same footer as index.html -->
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/dark-mode.js"></script>
+    <script src="../js/language-switcher.js"></script>
+    <script src="../js/department.js"></script>
+</body>
+</html>

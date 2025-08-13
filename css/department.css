@@ -1,0 +1,346 @@
+/* Department Page Styles */
+.department-banner {
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 100px 0 60px;
+    text-align: center;
+    margin-top: 76px;
+}
+
+.department-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.department-content {
+    padding: 80px 0;
+}
+
+.department-overview {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.overview-text {
+    flex: 1;
+}
+
+.overview-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: var(--black);
+    position: relative;
+}
+
+.overview-text h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.overview-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.quick-facts {
+    background-color: var(--light-gray);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    margin-top: 30px;
+}
+
+.quick-facts h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--black);
+}
+
+.quick-facts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-facts li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.quick-facts li::before {
+    content: '•';
+    color: var(--primary-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.overview-image {
+    flex: 1;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.overview-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.department-curriculum,
+.department-career,
+.department-gallery {
+    margin-bottom: 60px;
+}
+
+.department-curriculum h2,
+.department-career h2,
+.department-gallery h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: var(--black);
+    position: relative;
+}
+
+.department-curriculum h2::after,
+.department-career h2::after,
+.department-gallery h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.department-curriculum p,
+.department-career p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid var(--medium-gray);
+    margin: 30px 0;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.tab-btn.active {
+    border-bottom-color: var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.course-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+.course-card p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.career-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.career-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.career-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-hover);
+}
+
+.career-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.career-icon i {
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.career-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    height: 200px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.department-contact {
+    margin-top: 60px;
+}
+
+.contact-card {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-icon i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+}
+
+.contact-info .btn {
+    background-color: var(--white);
+    color: var(--secondary-color);
+}
+
+.contact-info .btn:hover {
+    background-color: var(--light-gray);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .department-overview {
+        flex-direction: column;
+    }
+    
+    .overview-image {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .department-banner {
+        padding: 80px 0 40px;
+    }
+    
+    .department-banner h1 {
+        font-size: 2.2rem;
+    }
+    
+    .tabs {
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .department-banner h1 {
+        font-size: 1.8rem;
+    }
+    
+    .contact-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
