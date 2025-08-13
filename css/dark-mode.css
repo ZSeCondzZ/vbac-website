@@ -1,19 +1,18 @@
 /* Dark Mode Styles */
 :root {
+    /* สีข้อความโหมดกลางคืน */
+    --text-color: #FFFFFF; /* สีขาว */
+    --text-light: #B0B0B0; /* สีเทาอ่อน */
+    
+    /* สีพื้นหลังโหมดกลางคืน */
     --white: #121212;
-    --black: #FFFFFF;
     --light-gray: #1E1E1E;
     --medium-gray: #2D2D2D;
     --dark-gray: #B0B0B0;
-    --text-color: #E0E0E0;
-    --text-light: #B0B0B0;
+    --black: #FFFFFF; /* สีขาวแทนสีดำในโหมดกลางคืน */
 }
 
-body {
-    background-color: var(--white);
-    color: var(--text-color);
-}
-
+/* ปรับสีพื้นหลังขององค์ประกอบต่างๆ */
 .main-header {
     background-color: var(--light-gray);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
@@ -51,19 +50,21 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.departments-section,
-.testimonials-section {
-    background-color: var(--medium-gray);
-}
-
+/* ปรับสีข้อความหัวข้อ */
 .section-header h2,
 .department-card h3,
 .testimonial-author h4 {
-    color: var(--black);
+    color: var(--black); /* ซึ่งในโหมดกลางคืนจะกลายเป็นสีขาว */
 }
 
 .section-header p,
 .department-card p,
 .testimonial-author p {
     color: var(--text-light);
+}
+
+/* ปรับสีพื้นหลังของส่วนต่างๆ */
+.departments-section,
+.testimonials-section {
+    background-color: var(--medium-gray);
 }
