@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     darkModeStylesheet.href = 'css/dark-mode.css';
     darkModeStylesheet.id = 'dark-mode-stylesheet';
     
-    // Check for saved user preference
+    // ตรวจสอบการตั้งค่าที่บันทึกไว้
     const savedMode = localStorage.getItem('darkMode');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         enableDarkMode();
     }
     
-    // Toggle dark mode
+    // การสลับโหมด
     darkModeToggle.addEventListener('click', function() {
         if (document.head.contains(darkModeStylesheet)) {
             disableDarkMode();
