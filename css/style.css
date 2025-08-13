@@ -1,24 +1,41 @@
-/* Base Styles */
 :root {
+    /* สีหลัก */
     --primary-color: #FFD700; /* สีเหลือง */
     --secondary-color: #4CAF50; /* สีเขียว */
+    
+    /* สีข้อความ */
+    --text-color: #333333; /* สีดำสำหรับโหมดกลางวัน */
+    --text-light: #757575; /* สีเทาเข้มสำหรับข้อความรอง */
+    
+    /* สีพื้นหลัง */
     --white: #FFFFFF;
-    --black: #333333;
     --light-gray: #F5F5F5;
     --medium-gray: #E0E0E0;
     --dark-gray: #757575;
-    --text-color: #333333;
-    --text-light: #757575;
+    
+    /* สีอื่นๆ */
+    --black: #333333;
     --success-color: #4CAF50;
     --warning-color: #FFC107;
     --danger-color: #F44336;
     --info-color: #2196F3;
+    
+    /* ฟอนต์ */
     --font-primary: 'Kanit', sans-serif;
     --font-secondary: Arial, sans-serif;
+    
+    /* เอฟเฟกต์ */
     --transition: all 0.3s ease;
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --box-shadow-hover: 0 8px 15px rgba(0, 0, 0, 0.1);
     --border-radius: 8px;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--text-color); /* ใช้สีข้อความจากตัวแปร */
+    background-color: var(--white);
+    line-height: 1.6;
 }
 
 * {
@@ -1317,4 +1334,5 @@ img {
 .lightbox-nav:hover {
     background-color: var(--primary-color);
     color: var(--black);
+
 }
